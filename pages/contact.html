@@ -65,8 +65,47 @@
                 <div>
                     <img src="https://res.cloudinary.com/divgzojnv/image/upload/v1639413976/Rojo%20Freelance/Contacto/contacto_svg.svg" alt="Contacto">
                 </div>
-                <div>
-                    <!-- Aca va el Formulario-->
+                <!-- Formulario con Bootstrap -->
+                <div class="container pb-3 mt-5 mb-5 rounded contact-form">
+                    <form class="row g-3">
+                        <div class="col-lg-6">
+                            <label class="form-label">Nombre</label>
+                            <input type="name" class="form-control">
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="form-label">Apellido</label>
+                            <input type="name" class="form-control">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputEmail4" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-12">
+                            <label for="floatingTextarea2">Mensaje</label>
+                            <textarea class="form-control" placeholder="Escribe tu mensaje aquí" id="floatingTextarea2" style="height: 100px"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
+
+                            <!-- Modal con Js de Bootstrap -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">¿Confirmar envío?</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Una vez recibido, te contactaremos a la brevedad.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Editar</button>
+                                            <button type="submit" class="btn btn-primary">Enviar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </form>
                 </div>
             </div>
         </section>
