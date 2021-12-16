@@ -1,2 +1,30 @@
+body {
+  margin: 0px;
+  padding: 0px; }
+
 #navbar {
-  background-color: black!important; }
+  background-color: #0a0a0a; }
+
+.titulo {
+  font-family: 'Nunito', sans-serif;
+  font-size: 5em;
+  font-weight: 600;
+  text-align: center;
+  color: #0a0a0a;
+  margin-top: 10px; }
+
+.subtitulo-home {
+  font-family: 'Nunito', sans-serif;
+  font-size: 3em;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+  color: #0a0a0a; }
+
+.contenedor-home {
+  display: flex;
+  flex-direction: column; }
+
+.ilustracion-home {
+  width: 30%;
+  height: 30%; }

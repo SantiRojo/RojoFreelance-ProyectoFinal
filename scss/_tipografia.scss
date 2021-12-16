@@ -1,0 +1,29 @@
+@import "colors.scss";
+
+//Títulos
+
+
+@mixin title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 5em;
+    font-weight: 600;
+    text-align: center;
+    color: $color-2;
+    margin-top: 10px;
+}
+
+@mixin subtitle {
+    font-family: 'Nunito', sans-serif;
+    font-size: 3em;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+    color: $color-2;
+}
+
+@mixin parrafo {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1em;
+    font-weight: 200;
+    color: $color-2;
+}

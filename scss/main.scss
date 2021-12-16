@@ -1,9 +1,33 @@
-#subtitulo-home {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 400;
-    font-size: 100px;
+//Imports
+@import "colors";
+@import "imgs";
+@import "tipografia.scss";
+
+body {
+    margin: 0px;
+    padding: 0px;
 }
 
 #navbar {
-    background-color: black;
+    background-color: $color-2;
+}
+
+.titulo {
+    @include title
+}
+
+.subtitulo-home {
+    @include subtitle
+}
+
+// Home
+.contenedor-home {
+    display: flex;
+    flex-direction: column;
+}
+
+// Imagenes home
+
+.ilustracion-home {
+    @include img-home
 }
