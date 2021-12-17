@@ -29,7 +29,7 @@ main {
   margin-top: 10px; }
 
 /* Estilos Home */
-.subtitulo-home {
+.subtitulo-home, .subtitulo-serv {
   margin-top: 10px;
   display: inline;
   font-family: 'Nunito', sans-serif;
@@ -59,6 +59,44 @@ main {
   padding: 0px;
   width: 100%;
   height: 100%; }
+
+/* Estilos Servicios*/
+.text-serv {
+  margin: 0px 20px 30px 20px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  color: #0a0a0a;
+  text-align: center; }
+
+.contenedor-serv__padreA, .contenedor-serv__padreB {
+  margin: 25px;
+  display: flex;
+  justify-content: space-around; }
+
+.contenedor-serv__padreB {
+  flex-direction: row-reverse; }
+
+.contenedor-serv__img, .contenedor-serv__txt {
+  margin: 50px;
+  width: 40vw; }
+
+.img-serv {
+  padding: 0px;
+  width: 100%;
+  height: 100%; }
+
+.contenedor-serv__txt {
+  padding: 20px; }
+
+.subtitulo-serv {
+  text-align: start; }
+
+.desc-serv {
+  font-family: 'Nunito', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  color: #0a0a0a; }
 
 /*Estilo footer*/
 footer {
@@ -93,14 +131,14 @@ footer {
     width: 50%;
     height: 50%;
     align-self: center; }
-  .subtitulo-home {
+  .subtitulo-home, .subtitulo-serv {
     margin-top: 20px; }
   footer {
     margin: 0px;
     height: 100%; } }
 
 @media (max-width: 425px) {
-  .subtitulo-home {
+  .subtitulo-home, .subtitulo-serv {
     font-size: 2em; }
   footer p {
     font-size: 20px; } }

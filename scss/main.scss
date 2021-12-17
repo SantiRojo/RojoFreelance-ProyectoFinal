@@ -61,6 +61,40 @@ main {
     @include img-home
 }
 
+/* Estilos Servicios*/
+.text-serv {
+    margin: 0px 20px 30px 20px;
+    @include parrafo;
+    text-align: center;
+}
+.contenedor-serv__padreA {
+    margin: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+.contenedor-serv__padreB {
+    @extend .contenedor-serv__padreA;
+    flex-direction: row-reverse;
+}
+.contenedor-serv__img {
+    margin: 50px;
+    width: 40vw;
+}
+.img-serv {
+    @include img-serv
+}
+.contenedor-serv__txt {
+    @extend .contenedor-serv__img;
+    padding: 20px;
+}
+.subtitulo-serv {
+    @extend .subtitulo-home;
+    text-align: start
+}
+.desc-serv {
+    @include parrafo;
+
+}
 
 /*Estilo footer*/
 footer {
