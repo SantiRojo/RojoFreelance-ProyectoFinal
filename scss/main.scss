@@ -2,14 +2,30 @@
 @import "colors";
 @import "imgs";
 @import "tipografia.scss";
-
+/*Estilo body*/
 body {
     margin: 0px;
     padding: 0px;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
 }
-
+/*Estilo header*/
+header {
+    grid-area: header;
+}
+/*Estilo NavBar*/
 #navbar {
-    background-color: $color-2;
+    background-color: $color-2!important;
+}
+.nav-link {
+    font-family: 'Nunito', sans-serif!important;
+}
+/*Estilo main*/
+main {
+    grid-area: main;
 }
 
 .titulo {
@@ -17,17 +33,58 @@ body {
 }
 
 .subtitulo-home {
+    margin-top: 10px;
+    display: inline-block;
     @include subtitle
 }
 
 // Home
 .contenedor-home {
+    margin: 45px 0px;
+    padding: 0px;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.contenedor-home__hijo {
+    margin: 45px;
+    padding: 0px;
+    width: 25%;
     display: flex;
     flex-direction: column;
+
 }
 
 // Imagenes home
 
 .ilustracion-home {
     @include img-home
+}
+/*Estilo footer*/
+footer {
+    margin-top: 50px;
+    grid-area: footer;
+    background-color: $color-2;
+    max-width: 100vw;
+    height: 30px;
+    p {
+        @include p-footer
+    }
+}
+
+/*Media Queries*/
+@media (max-width: 768px) {
+    body {
+        grid-template-areas: "header"
+        "main"
+        "main"
+        "main"
+        "footer";
+    }
+    .contenedor-home {
+        flex-direction: column;
+        justify-content:space-between;
+        align-items: center;
+    }
 }
