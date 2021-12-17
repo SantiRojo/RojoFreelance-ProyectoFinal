@@ -42,7 +42,7 @@ main {
 .contenedor-home {
   margin: 45px 0px;
   padding: 0px;
-  height: 50vh;
+  height: 60vh;
   display: flex;
   justify-content: space-around;
   align-items: baseline; }
