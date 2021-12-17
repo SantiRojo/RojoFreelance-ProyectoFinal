@@ -32,13 +32,12 @@ main {
     @include title
 }
 
+/* Estilos Home */
 .subtitulo-home {
     margin-top: 10px;
-    display: inline-block;
+    display: inline;
     @include subtitle
 }
-
-// Home
 .contenedor-home {
     margin: 45px 0px;
     padding: 0px;
@@ -56,11 +55,13 @@ main {
 
 }
 
-// Imagenes home
+/* Imagenes home */
 
 .ilustracion-home {
     @include img-home
 }
+
+
 /*Estilo footer*/
 footer {
     margin-top: 50px;
@@ -83,8 +84,35 @@ footer {
         "footer";
     }
     .contenedor-home {
+        height: 100%;
+        margin: 0px;
         flex-direction: column;
         justify-content:space-between;
         align-items: center;
+    }
+    .contenedor-home__hijo {
+        width: 100%;
+    }
+    .ilustracion-home{
+        width: 50%;
+        height: 50%;
+        align-self: center;
+    }
+    .subtitulo-home {
+        margin-top: 20px;
+    }
+    footer {
+        margin: 0px;
+    }
+}
+
+@media (max-width: 425px) {
+    .subtitulo-home {
+        font-size: 2em;
+    }
+    footer {
+        p{
+            font-size: 10px;
+        }
     }
 }

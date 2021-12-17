@@ -28,9 +28,10 @@ main {
   color: #0a0a0a;
   margin-top: 10px; }
 
+/* Estilos Home */
 .subtitulo-home {
   margin-top: 10px;
-  display: inline-block;
+  display: inline;
   font-family: 'Nunito', sans-serif;
   font-size: 3em;
   font-style: italic;
@@ -53,6 +54,7 @@ main {
   display: flex;
   flex-direction: column; }
 
+/* Imagenes home */
 .ilustracion-home {
   padding: 0px;
   width: 100%;
@@ -70,7 +72,7 @@ footer {
     padding: 5px;
     color: #F1F1F1;
     font-family: 'Nunito', sans-serif;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 100;
     font-style: italic;
     text-align: center; }
@@ -80,6 +82,24 @@ footer {
   body {
     grid-template-areas: "header" "main" "main" "main" "footer"; }
   .contenedor-home {
+    height: 100%;
+    margin: 0px;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center; } }
+    align-items: center; }
+  .contenedor-home__hijo {
+    width: 100%; }
+  .ilustracion-home {
+    width: 50%;
+    height: 50%;
+    align-self: center; }
+  .subtitulo-home {
+    margin-top: 20px; }
+  footer {
+    margin: 0px; } }
+
+@media (max-width: 425px) {
+  .subtitulo-home {
+    font-size: 2em; }
+  footer p {
+    font-size: 10px; } }
