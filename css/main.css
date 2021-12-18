@@ -13,6 +13,9 @@ header {
 #navbar {
   background-color: #0a0a0a !important; }
 
+#logo-nav {
+  width: 205px; }
+
 .nav-link {
   font-family: "Nunito", sans-serif !important; }
 
