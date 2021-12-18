@@ -104,7 +104,6 @@ main {
     @include parrafo;
     padding-top: 10px;
     text-align: left;
-    hyphens: auto;
 }
 
 /*Estilo footer*/
@@ -193,6 +192,10 @@ footer {
     .contenedor-serv__txt {
         padding: 20px 0px;
     }
+
+.text-serv {
+    hyphens: auto;
+}
     .desc-serv {
         text-align: center;
     }

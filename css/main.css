@@ -112,8 +112,7 @@ main {
   color: #0a0a0a;
   text-align: center;
   padding-top: 10px;
-  text-align: left;
-  hyphens: auto; }
+  text-align: left; }
 
 /*Estilo footer*/
 footer {
@@ -185,6 +184,8 @@ footer {
     font-size: 2em; }
   .contenedor-serv__txt {
     padding: 20px 0px; }
+  .text-serv {
+    hyphens: auto; }
   .desc-serv {
     text-align: center; }
   footer p {
