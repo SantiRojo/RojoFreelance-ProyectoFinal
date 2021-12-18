@@ -29,7 +29,7 @@ main {
   font-size: 5em;
   font-weight: 600;
   text-align: center;
-  color: #0a0a0a; }
+  color: #1e1e1e; }
 
 /* Estilos Home */
 .subtitulo-home, .subtitulo-serv {
@@ -71,6 +71,7 @@ main {
   font-size: 25px;
   font-weight: 300;
   color: #0a0a0a;
+  text-align: center;
   text-align: center; }
 
 .contenedor-serv__padreA, .contenedor-serv__padreB {
@@ -102,7 +103,10 @@ main {
   font-size: 25px;
   font-weight: 300;
   color: #0a0a0a;
-  padding-top: 10px; }
+  text-align: center;
+  padding-top: 10px;
+  text-align: left;
+  hyphens: auto; }
 
 /*Estilo footer*/
 footer {
@@ -143,7 +147,28 @@ footer {
     margin-top: 20px; }
   footer {
     margin: 0px;
-    height: 100%; } }
+    height: 100%; }
+  .contenedor-serv__padreA, .contenedor-serv__padreB {
+    flex-direction: column-reverse;
+    align-items: center; }
+  .contenedor-serv__img, .contenedor-serv__txt {
+    width: 60vw;
+    margin: 20px; }
+  .contenedor-serv__txt {
+    width: 90vw;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .subtitulo-serv {
+    text-align: center; }
+  .text-serv {
+    padding: 0px 5px;
+    text-align: center;
+    font-size: 22px; }
+  .desc-serv {
+    text-align: justify;
+    font-size: 22px; } }
 
 @media (max-width: 490px) {
   .titulo {
@@ -151,5 +176,9 @@ footer {
     background-image: url(https://res.cloudinary.com/divgzojnv/image/upload/v1639849679/Rojo%20Freelance/General/bg_img_425f_idniio.svg); }
   .subtitulo-home, .subtitulo-serv {
     font-size: 2em; }
+  .contenedor-serv__txt {
+    padding: 20px 0px; }
+  .desc-serv {
+    text-align: center; }
   footer p {
-    font-size: 20px; } }
+    font-size: 15px; } }
