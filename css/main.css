@@ -174,7 +174,8 @@ footer {
     font-size: 22px; }
   .desc-serv {
     text-align: justify;
-    font-size: 22px; } }
+    font-size: 22px;
+    hyphens: auto; } }
 
 @media (max-width: 490px) {
   .titulo {
