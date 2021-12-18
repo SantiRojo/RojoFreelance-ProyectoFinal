@@ -176,7 +176,7 @@ footer {
         font-size: 22px;
     }
     .desc-serv {
-        text-align: justify;
+        text-align: center;
         font-size: 22px;
         hyphens: auto;
     }
@@ -193,14 +193,9 @@ footer {
     .contenedor-serv__txt {
         padding: 20px 0px;
     }
-
-.text-serv {
-    hyphens: auto;
-}
-    .desc-serv {
-        text-align: center;
+    .text-serv {
+        hyphens: auto;
     }
-
     footer {
         p{
             font-size: 15px;

@@ -173,7 +173,7 @@ footer {
     text-align: center;
     font-size: 22px; }
   .desc-serv {
-    text-align: justify;
+    text-align: center;
     font-size: 22px;
     hyphens: auto; } }
 
@@ -187,7 +187,5 @@ footer {
     padding: 20px 0px; }
   .text-serv {
     hyphens: auto; }
-  .desc-serv {
-    text-align: center; }
   footer p {
     font-size: 15px; } }
