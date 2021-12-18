@@ -19,6 +19,10 @@ header {
 .nav-link {
   font-family: "Nunito", sans-serif !important; }
 
+/*Portada*/
+#portada {
+  width: 100%; }
+
 /*Estilo main*/
 main {
   grid-area: main; }
