@@ -21,12 +21,15 @@ main {
   grid-area: main; }
 
 .titulo {
+  margin-bottom: 20px;
   font-family: 'Nunito', sans-serif;
+  background-image: url(https://res.cloudinary.com/divgzojnv/image/upload/v1639847567/Rojo%20Freelance/General/bg_img.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
   font-size: 5em;
   font-weight: 600;
   text-align: center;
-  color: #0a0a0a;
-  margin-top: 10px; }
+  color: #0a0a0a; }
 
 /* Estilos Home */
 .subtitulo-home, .subtitulo-serv {
@@ -62,7 +65,8 @@ main {
 
 /* Estilos Servicios*/
 .text-serv {
-  margin: 0px 20px 30px 20px;
+  margin: 0px 0px 30px 0px;
+  padding: 0px 15px;
   font-family: 'Nunito', sans-serif;
   font-size: 25px;
   font-weight: 300;
@@ -70,7 +74,8 @@ main {
   text-align: center; }
 
 .contenedor-serv__padreA, .contenedor-serv__padreB {
-  margin: 25px;
+  max-width: 100vw;
+  margin: 25px 0px;
   display: flex;
   justify-content: space-around; }
 
@@ -96,7 +101,8 @@ main {
   font-family: 'Nunito', sans-serif;
   font-size: 25px;
   font-weight: 300;
-  color: #0a0a0a; }
+  color: #0a0a0a;
+  padding-top: 10px; }
 
 /*Estilo footer*/
 footer {
@@ -131,13 +137,18 @@ footer {
     width: 50%;
     height: 50%;
     align-self: center; }
+  .titulo {
+    background-image: url(https://res.cloudinary.com/divgzojnv/image/upload/v1639848334/Rojo%20Freelance/General/bg_img_768.svg); }
   .subtitulo-home, .subtitulo-serv {
     margin-top: 20px; }
   footer {
     margin: 0px;
     height: 100%; } }
 
-@media (max-width: 425px) {
+@media (max-width: 490px) {
+  .titulo {
+    font-size: 3em;
+    background-image: url(https://res.cloudinary.com/divgzojnv/image/upload/v1639849679/Rojo%20Freelance/General/bg_img_425f_idniio.svg); }
   .subtitulo-home, .subtitulo-serv {
     font-size: 2em; }
   footer p {
