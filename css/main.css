@@ -14,7 +14,7 @@ header {
   background-color: #0a0a0a !important; }
 
 #logo-nav {
-  width: 205px; }
+  width: 205px !important; }
 
 .nav-link {
   font-family: "Nunito", sans-serif !important; }
@@ -185,7 +185,9 @@ footer {
     font-size: 2em; }
   .contenedor-serv__txt {
     padding: 20px 0px; }
-  .subtitulo-serv .text-serv {
+  .subtitulo-serv {
+    font-size: 2em; }
+  .text-serv {
     hyphens: auto;
     font-size: 20px; }
   .desc-serv {
