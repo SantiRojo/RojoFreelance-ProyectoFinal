@@ -21,7 +21,7 @@ header {
     background-color: $color-2!important;
 }
 #logo-nav {
-    width: 205px;
+    width: 205px!important;
 }
 .nav-link {
     font-family: 'Nunito', sans-serif!important;
@@ -93,8 +93,9 @@ main {
     @include img-serv
 }
 .contenedor-serv__txt {
-    @extend .contenedor-serv__img;
     padding: 20px;
+    @extend .contenedor-serv__img;
+    
 }
 .subtitulo-serv {
     @extend .subtitulo-home;
@@ -193,8 +194,15 @@ footer {
     .contenedor-serv__txt {
         padding: 20px 0px;
     }
+    .subtitulo-serv {
+        @extend .subtitulo-home
+    }
     .text-serv {
         hyphens: auto;
+        font-size: 20px;
+    }
+    .desc-serv {
+        font-size: 18px;
     }
     footer {
         p{

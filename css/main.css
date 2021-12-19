@@ -185,7 +185,10 @@ footer {
     font-size: 2em; }
   .contenedor-serv__txt {
     padding: 20px 0px; }
-  .text-serv {
-    hyphens: auto; }
+  .subtitulo-serv .text-serv {
+    hyphens: auto;
+    font-size: 20px; }
+  .desc-serv {
+    font-size: 18px; }
   footer p {
     font-size: 15px; } }
