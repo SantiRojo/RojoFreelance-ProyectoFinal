@@ -62,69 +62,72 @@
     <main>
         <section>
             <h1 class="titulo">Portfolio</h1>
-            <div class="contenedor-port">
-                <div class="contenedor-port_img">
+            <p class="txt-head">Cada cliente tiene una historia por contar, algo que transmitir y metas por alcanzar, nosotros lo hacemos posible. <br> Te invitamos a dar un recorrido por algunos de nuestros trabajos.</p>
+        </section>
+        <section>
+            <div class="contenedor-port__padre1">
+                <div class="contenedor-ilustracionPort">
                     <img class="img-port" src="https://res.cloudinary.com/divgzojnv/image/upload/v1639424657/Rojo%20Freelance/Portfolio/portfolio_svg.svg" alt="Portfolio">
                 </div>
-                <div class="contenedor-port_txt">
-                    <p>Cada cliente tiene una historia por contar, algo que transmitir y metas por alcanzar. Nosotros lo hacemos posible.</p>
-                    <p>Te invitamos a dar un recorrido por algunos de nuestros trabajos.</p>
+                <div class="contenedor-carru__logo">
+                    <h2 class="subtitulo-port">Logotipos</h2>
+                    <!-- Carousel de logos -->
+                    <div class="container">
+                        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <img class="img-fluid" src="https://res.cloudinary.com/divgzojnv/image/upload/v1637375687/Rojo%20Freelance/Portfolio/Carrousell/logo-odons.jpg" class="d-block w-100" alt="Logo Odons">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img class="img-fluid" src="https://res.cloudinary.com/divgzojnv/image/upload/v1637375687/Rojo%20Freelance/Portfolio/Carrousell/logo_webandwine.jpg" class="d-block w-100" alt="Logo Web & Wine">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img class="img-fluid" src="https://res.cloudinary.com/divgzojnv/image/upload/v1637375687/Rojo%20Freelance/Portfolio/Carrousell/logo_sendbox.jpg" class="d-block w-100" alt="Logo SendBox">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section>
-            <h2 class="subtitulo-port">Logotipos</h2>
-            <!-- Carousel de logos -->
-            <div class="container">
-                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active" data-bs-interval="10000">
-                        <img class="img-fluid" src="https://res.cloudinary.com/divgzojnv/image/upload/v1637375687/Rojo%20Freelance/Portfolio/Carrousell/logo-odons.jpg" class="d-block w-100" alt="Logo Odons">
-                      </div>
-                      <div class="carousel-item" data-bs-interval="2000">
-                        <img class="img-fluid" src="https://res.cloudinary.com/divgzojnv/image/upload/v1637375687/Rojo%20Freelance/Portfolio/Carrousell/logo_webandwine.jpg" class="d-block w-100" alt="Logo Web & Wine">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="img-fluid" src="https://res.cloudinary.com/divgzojnv/image/upload/v1637375687/Rojo%20Freelance/Portfolio/Carrousell/logo_sendbox.jpg" class="d-block w-100" alt="Logo SendBox">
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h2 class="subtitulo-port">Campañas</h2>
-            <!-- Carousel de Campañas -->
-            <div class="container mb-3">
-                <div id="carouselExampleDark2" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="2000">
-                            <img class="img-fluid" src="https://res.cloudinary.com/divgzojnv/image/upload/v1637422582/Rojo%20Freelance/Portfolio/Carrousell/carrousell-campan%CC%83a_4.jpg" class="d-block w-100" alt="Campaña donación de sangre">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="2000">
-                            <img class="img-fluid" src="https://res.cloudinary.com/divgzojnv/image/upload/v1637422583/Rojo%20Freelance/Portfolio/Carrousell/carrousell-campan%CC%83a_2.jpg" class="d-block w-100" alt="Campaña prevención cancer de pulmón">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="2000">
-                            <img class="img-fluid" src="https://res.cloudinary.com/divgzojnv/image/upload/v1637422583/Rojo%20Freelance/Portfolio/Carrousell/carrousell-campan%CC%83a_3.jpg" class="d-block w-100" alt="Campaña presión arterial">
+            <div class="contenedor-port__padre2">
+                <div class="contenedor-carru__campa">
+                    <h2 class="subtitulo-port">Campañas</h2>
+                    <!-- Carousel de Campañas -->
+                    <div id="carrCampa" class="container mb-3">
+                        <div id="carouselExampleDark2" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="6000">
+                                    <img class="img-fluid" src="https://res.cloudinary.com/divgzojnv/image/upload/v1637422582/Rojo%20Freelance/Portfolio/Carrousell/carrousell-campan%CC%83a_4.jpg" class="d-block w-100" alt="Campaña donación de sangre">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="6000">
+                                    <img class="img-fluid" src="https://res.cloudinary.com/divgzojnv/image/upload/v1637422583/Rojo%20Freelance/Portfolio/Carrousell/carrousell-campan%CC%83a_2.jpg" class="d-block w-100" alt="Campaña prevención cancer de pulmón">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="6000">
+                                    <img class="img-fluid" src="https://res.cloudinary.com/divgzojnv/image/upload/v1637422583/Rojo%20Freelance/Portfolio/Carrousell/carrousell-campan%CC%83a_3.jpg" class="d-block w-100" alt="Campaña presión arterial">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
