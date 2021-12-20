@@ -126,15 +126,41 @@ main {
 }
 .contenedor-port__padre2{
     margin-top: 50px;
-    width: 100vw;
     display: flex;
     justify-content: center;
 }
 .contenedor-carru__campa {
     @extend .contenedor-carru__logo;
     width: 90vw;
-    justify-content: center;
 }
+/* Estilos About*/
+.contenedor-about {
+    @extend .contenedor-serv__padreA;
+
+}
+.contenedor-about__img {
+    margin: 0px;
+    width: 40vw;
+}
+.img-about {
+    width: 75%;
+    height: auto;
+}
+.contenedor-about__txt1 {
+    margin: 0px;
+    width: 50vw;
+    align-items: center
+}
+.txt-about {
+    @include parrafo;
+    font-size: 20px;
+    text-align: start;
+}
+.contenedor-about__txt2 {
+    margin: 0px 20px;
+    width: 100vw;
+}
+
 /*Estilos footer*/
 footer {
     margin-top: 50px;
