@@ -120,9 +120,7 @@ main {
 .contenedor-carru__logo{
     padding: 0px 10px 10px 10px;
     width: 40vw;
-    background-color: $color-6;
-    border-radius: 25px;
-    box-shadow: 1px 1px 10px rgb(153, 152, 152);
+    @include caja-sombreada;
 }
 .contenedor-port__padre2{
     margin-top: 50px;
@@ -169,7 +167,30 @@ main {
     width: 90vw;
 }
 /* Estilos Contacto*/
-
+.contenedor-contact__1 {
+    @extend .contenedor-serv__padreA;
+}
+.contenedor-contact__img {
+    width: 40vw;
+}
+.img-contact {
+    @include ilustraciones
+}
+.contact-form {
+    padding-top: 20px;
+    margin: 0px;
+    width: 50vw;
+    @include caja-sombreada;
+}
+.contenedor-rrss {
+    margin: 50px 300px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.img-rrss {
+    width: 50px;
+    height: 50px;
+}
 /*Estilos footer*/
 footer {
     margin-top: 50px;
@@ -279,6 +300,20 @@ footer {
     }
     .contenedor-about__txt2 {
         margin: 0px auto;
+    }
+    .contenedor-contact__1 {
+        margin: 0px;
+        flex-direction: column;
+    }
+    .contenedor-contact__img {
+        width: 50vw;
+    }
+    .contact-form {
+        margin-bottom: 10px!important;
+        width: 80vw;
+    }
+    .contenedor-rrss {
+        margin: 20px 100px;
     }
 }
 

@@ -7,3 +7,9 @@
     margin: 50px;
     width: 40vw;
 }
+
+@mixin caja-sombreada {
+    background-color: $color-6;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px rgb(153, 152, 152);
+}
