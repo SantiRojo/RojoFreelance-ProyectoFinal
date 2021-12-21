@@ -39,7 +39,7 @@ main {
   color: #1e1e1e; }
 
 /* Estilos Home */
-.subtitulo-home, .subtitulo-serv {
+.subtitulo-home {
   margin-top: 10px;
   font-family: 'Nunito', sans-serif;
   font-size: 3em;
@@ -80,6 +80,13 @@ main {
   text-align: center; }
 
 .subtitulo-serv {
+  margin-top: 10px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 3em;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+  color: #0a0a0a;
   text-align: start; }
 
 .desc-serv, .txt-port {
@@ -106,13 +113,11 @@ main {
 .contenedor-serv__padreB {
   flex-direction: row-reverse; }
 
-.contenedor-serv__img {
+.contenedor-serv__img, .contenedor-serv__txt {
   margin: 50px;
   width: 40vw; }
 
 .contenedor-serv__txt {
-  margin: 50px;
-  width: 40vw;
   padding: 20px; }
 
 /*Estilos Portfolio */
@@ -172,7 +177,18 @@ main {
   width: 350px;
   height: auto;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  animation-name: foto_about;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 2s; }
+
+@keyframes foto_about {
+  0% {
+    transform: rotateY(0deg); }
+  100% {
+    transform: rotateY(360deg); } }
 
 .contenedor-about__txt1 {
   margin: 0px 40px 0px 0px;
@@ -211,6 +227,10 @@ main {
   border-radius: 25px;
   box-shadow: 1px 1px 10px #999898; }
 
+#boton-submit {
+  background-color: #CD3B43 !important;
+  border-color: #df363e; }
+
 .contenedor-rrss {
   margin: 50px 300px 0px;
   display: flex;
@@ -218,7 +238,20 @@ main {
 
 .img-rrss {
   width: 50px;
-  height: 50px; }
+  height: 50px;
+  transition: width 1, height 1; }
+
+.img-rrss:hover {
+  transform: scale(1.2); }
+
+/* Estilo link a navbar*/
+.top-link {
+  display: flex;
+  justify-content: space-around; }
+
+#top-link-img {
+  width: 30px;
+  height: 30px; }
 
 /*Estilos footer*/
 footer {
@@ -255,15 +288,12 @@ footer {
     align-self: center; }
   .titulo {
     background-image: url(https://res.cloudinary.com/divgzojnv/image/upload/v1639848334/Rojo%20Freelance/General/bg_img_768.svg); }
-  .subtitulo-home, .subtitulo-serv {
+  .subtitulo-home {
     margin-top: 20px; }
-  footer {
-    margin: 0px;
-    height: 100%; }
   .contenedor-serv__padreA, .contenedor-serv__padreB, .contenedor-about, .contenedor-contact__1 {
     flex-direction: column-reverse;
     align-items: center; }
-  .contenedor-serv__img {
+  .contenedor-serv__img, .contenedor-serv__txt {
     width: 60vw;
     margin: 20px; }
   .contenedor-serv__txt {
@@ -317,13 +347,18 @@ footer {
     margin-bottom: 10px !important;
     width: 80vw; }
   .contenedor-rrss {
-    margin: 20px 100px; } }
+    margin: 20px 100px; }
+  .top-link {
+    margin-bottom: 15px; }
+  footer {
+    margin: 0px;
+    height: 100%; } }
 
 @media (max-width: 490px) {
   .titulo {
     font-size: 3em;
     background-image: url(https://res.cloudinary.com/divgzojnv/image/upload/v1639849679/Rojo%20Freelance/General/bg_img_425f_idniio.svg); }
-  .subtitulo-home, .subtitulo-serv {
+  .subtitulo-home {
     font-size: 2em; }
   .contenedor-serv__txt {
     padding: 20px 0px; }
@@ -347,5 +382,7 @@ footer {
     font-size: 2em; }
   .txt-about {
     font-size: 18px; }
+  .contenedor-rrss {
+    margin: 20px 50px; }
   footer p {
     font-size: 15px; } }

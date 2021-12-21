@@ -67,7 +67,7 @@ main {
     @include parrafo;
 }
 .subtitulo-serv {
-    @extend .subtitulo-home;
+    @include subtitle;
     text-align: start;
 }
 .desc-serv {
@@ -93,7 +93,7 @@ main {
     @include caja-ilustraciones;
 }
 .contenedor-serv__txt {
-    @include caja-ilustraciones;  
+    @extend .contenedor-serv__img;  
     padding: 20px; 
 }
 /*Estilos Portfolio */
@@ -148,6 +148,17 @@ main {
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    animation-name: foto_about;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+@keyframes foto_about {
+    0% {
+      transform: rotateY(0deg); }
+    100% {
+      transform: rotateY(360deg); } 
 }
 .contenedor-about__txt1 {
     margin: 0px 40px 0px 0px;
@@ -182,6 +193,10 @@ main {
     width: 50vw;
     @include caja-sombreada;
 }
+#boton-submit {
+    background-color: $color-4!important;
+    border-color: $color-1;
+}
 .contenedor-rrss {
     margin: 50px 300px 0px;
     display: flex;
@@ -190,6 +205,19 @@ main {
 .img-rrss {
     width: 50px;
     height: 50px;
+    transition: width 1, height 1;
+}
+.img-rrss:hover {
+    transform: scale(1.2);
+}
+/* Estilo link a navbar*/
+.top-link {
+    display: flex;
+    justify-content: space-around;
+}
+#top-link-img {
+    width: 30px;
+    height: 30px;
 }
 /*Estilos footer*/
 footer {
@@ -232,10 +260,6 @@ footer {
     }
     .subtitulo-home {
         margin-top: 20px;
-    }
-    footer {
-        margin: 0px;
-        height: 100%;
     }
     .contenedor-serv__padreA {
         flex-direction: column-reverse;
@@ -315,8 +339,14 @@ footer {
     .contenedor-rrss {
         margin: 20px 100px;
     }
+    .top-link {
+        margin-bottom: 15px;
+    }
+    footer {
+        margin: 0px;
+        height: 100%;
+    }
 }
-
 @media (max-width: 490px) {
     .titulo {
         font-size: 3em;
@@ -356,6 +386,9 @@ footer {
     }
     .txt-about {
         font-size: 18px;
+    }
+    .contenedor-rrss {
+        margin: 20px 50px;
     }
     footer {
         p{
