@@ -3,7 +3,7 @@ body {
   margin: 0px;
   padding: 0px;
   display: grid;
-  grid-template-areas: "header" "main" "footer"; }
+  grid-template-areas: "header" "main" "footer"; }
 
 /*Estilos header*/
 header {
@@ -273,7 +273,7 @@ footer {
 /*Media Queries*/
 @media (max-width: 768px) {
   body {
-    grid-template-areas: "header" "main" "main" "main" "footer"; }
+    grid-template-areas: "header" "main" "main" "main" "footer"; }
   .contenedor-home {
     height: 100%;
     margin: 0px;
