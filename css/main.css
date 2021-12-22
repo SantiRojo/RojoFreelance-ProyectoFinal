@@ -16,6 +16,12 @@ header {
 #logo-nav {
   width: 205px !important; }
 
+.logo-navbar {
+  transition: opacity .1s; }
+
+.logo-navbar:hover {
+  opacity: 70%; }
+
 .nav-link {
   font-family: "Nunito", sans-serif !important; }
 

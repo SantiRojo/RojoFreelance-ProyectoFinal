@@ -22,7 +22,13 @@ header {
     background-color: $color-2!important;
 }
 #logo-nav {
-    width: 205px!important;
+    width: 205px!important; 
+}
+.logo-navbar {
+    transition: opacity .1s;
+}
+.logo-navbar:hover {
+    opacity: 70%; 
 }
 .nav-link {
     font-family: 'Nunito', sans-serif!important;
